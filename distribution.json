@@ -22,6 +22,15 @@
       },
       "mainServer": false,
       "autoconnect": false,
+      "javaOptions": {
+      "supported": ">=11",
+      "suggestedMajor": 11,
+      "distribution": "TEMURIN",
+      "ram": {
+        "recommended": 3072,
+        "minimum": 2048
+        }
+      },
       "modules": []
     }
   ]
