@@ -1,37 +1,55 @@
 {
   "version": "1.0.0",
-  "rss": "<LINK TO RSS FEED>",
+  "rss": "https://example.com/feed.rss",
   "discord": {
-    "clientId": "<FILL IN OR REMOVE DISCORD OBJECT>",
-    "smallImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
-    "smallImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
+    "clientId": "123456789012345678",
+    "smallImageText": "LemonFabric",
+    "smallImageKey": "lemon-icon"
   },
   "servers": [
     {
       "id": "LemonFabric-1.16.4",
-      "name": "LemonFabric (Minecraft 1.16.4)",
-      "description": "LemonFabric Running Minecraft 1.16.4",
-      "icon": null,
-      "version": "1.0.0",
-      "address": "localhost:25565",
+      "name": "LemonFabric 1.16.4s",
+      "description": "Server moddato con Fabric su Minecraft 1.16.4",
+      "icon": "https://example.com/server-icon.png",
+      "version": "1.2.0",
+      "address": "mc.lemoncraft.com:25565",
       "minecraftVersion": "1.16.4",
       "discord": {
-        "shortId": "<FILL IN OR REMOVE DISCORD OBJECT>",
-        "largeImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
-        "largeImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
+        "shortId": "LEMON",
+        "largeImageText": "Gioca su LemonFabric!",
+        "largeImageKey": "lemon-banner"
       },
       "mainServer": false,
       "autoconnect": false,
       "javaOptions": {
-      "supported": ">=11",
-      "suggestedMajor": 11,
-      "distribution": "TEMURIN",
-      "ram": {
-        "recommended": 3072,
-        "minimum": 2048
-        }
+        "supported": ">=11",
+        "suggestedMajor": 11,
+        "distribution": "TEMURIN",
+        "ram": {
+          "recommended": 3072,
+          "minimum": 2048
+        },
+        "platformOptions": [
+          {
+            "platform": "darwin",
+            "architecture": "arm64",
+            "distribution": "ZULU"
+          }
+        ]
       },
-      "modules": []
+      "modules": [
+        {
+          "id": "net.fabricmc:fabric-loader:0.14.22",
+          "name": "Fabric Loader",
+          "type": "Fabric",
+          "artifact": {
+            "size": 2345678,
+            "MD5": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p",
+            "url": "https://example.com/libs/fabric-loader-0.14.22.jar"
+          }
+        }
+      ]
     }
   ]
 }
